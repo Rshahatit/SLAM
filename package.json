@@ -1,0 +1,24 @@
+{
+  "name": "slam",
+  "version": "1.0.0",
+  "description": "security logging alertingmonitoring",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rshahatit/SLAM.git"
+  },
+  "author": "Rami Shahatit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rshahatit/SLAM/issues"
+  },
+  "homepage": "https://github.com/Rshahatit/SLAM#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.1"
+  }
+}
