@@ -42,6 +42,14 @@ app.get("/metrics", (req, res) => {
   res.render("metrics");
 });
 
+app.get("/register", (req, res) => {
+  res.render("register");
+});
+
+app.get("/signin", (req, res) => {
+  res.render("signin");
+});
+
 app.post("#", (req, res) => {});
 
 app.get("#", (req, res) => {
