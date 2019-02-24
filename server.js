@@ -29,25 +29,38 @@ app.get("/", (req, res) => {
   // res.sendFile(path.join(__dirname + "/start.html"));
   const example = "Welcome to Pesca";
   res.render("index", {
-    title: example
+    active_home: true
   });
   console.log("printing something here to look at logs for");
 });
 
 app.get("/about", (req, res) => {
-  res.render("about");
+  res.render("about", {
+    active_about: true
+  });
 });
 
 app.get("/metrics", (req, res) => {
-  res.render("metrics");
+  res.render("metrics", {
+    active_metrics: true
+  });
 });
 
 app.get("/register", (req, res) => {
-  res.render("register");
+  res.render("register", {
+    active_dd: true
+  });
+});
+
+app.post("/register", (req, res) => {
+  const fido = require("./registerFIDO");
+  fido();
 });
 
 app.get("/signin", (req, res) => {
-  res.render("signin");
+  res.render("signin", {
+    active_dd: true
+  });
 });
 
 app.post("#", (req, res) => {});
