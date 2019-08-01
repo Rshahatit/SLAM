@@ -1,2 +1,2 @@
 # SLAM
-security logging alertingmonitoring
+security logging alerting monitoring
